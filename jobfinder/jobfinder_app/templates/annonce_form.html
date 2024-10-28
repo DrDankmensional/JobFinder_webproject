@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire annonce</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'new_css/style_form.css' %}">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <!-- logo -->
+                <div class="logo">
+                  <a href="{% url 'home_page'%}"><img src="{% static 'img/Logo_main.png' %}" class="logo_img"></a>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <form method="POST">
+                {% csrf_token %}
+                <h2><center>Création d'une nouvelle annonce</center></h2>
+                <div class="element">
+                    <label for="titre">Titre de l'annonce</label>
+                    <input type="text" name="titre" class="input" required>
+                </div>
+                <div class="element">
+                    <label for="adresse">Localisation du poste</label>
+                    <input type="text" name="adresse"  class="input"required>
+                </div>
+                <div class="element">
+                    <label for="nom_entreprise">Nom de l'entreprise</label>
+                    <input type="text" name="nom_entreprise" class="input"required>
+                </div>
+                <div class="element">
+                    <label for="salaire">Fourchette de salaire</label>
+                    <input type="text" name="salaire" class="input">
+                </div>
+                <div class="element">
+                    <label for="date">Date de publication de l'annonce</label>
+                    <input type="date" name="date" class="input" required>
+                </div>
+                <div class="element">
+                    <label for="contrat">Type de contrat</label>
+                    <select name="contrat" class="input" required>
+                        <option value="">Selectionner le type de contrat</option>
+                        <option value="CDI">CDI</option>
+                        <option value="CDD 6 mois">CDD 6 mois</option>
+                        <option value="CDD 12 mois">CDD 12 mois</option>
+                        <option value="CDD 18 mois">CDD 18 mois</option>
+                        <option value="Stage">Stage</option>
+                        <option value="Stage 6 mois">Stage 6 mois</option>
+                        <option value="Alternance">Alternance</option>
+                    </select>
+                </div>
+                <div class="element_descr">
+                    <label for="short_description">Description courte du post (255 caractères)</label>
+                    <textarea name="short_description" maxlength="255" rows="3" required></textarea>
+                </div>
+                <div class="element_descr">
+                    <label for="long_description">Description détaillé du poste</label>
+                    <textarea name="long_description" rows="5" required></textarea>
+                </div>
+                <div class="submit_div">
+                    <label for="submit"></label>
+                    <input type="submit" name="submit" value="Créer" class="submit">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <footer>
+          
+                <h3><center>Contactez-nous pour trouver votre job de rêve</center></h3>
+                <div class="info-G">
+                  <h4 class="infos">A propos de jobfinder</h4>
+                  <p class="infos">Email : findyourdreamjob@jobfinder.com </p>
+                  <p class="infos">Telephone : 01-45-02-65-16</p>
+                  <p class="infos">Siège social : 36 Quai des Orfèvres, <br>75016 Paris </p>
+                  <p class="infos">SIRET :  91326852000065 </p>
+                </div>
+               <div class="reseaux-J">
+                <div class="reseaux">
+                  <h4>Nos réseaux sociaux : </h4>
+                  <ul>
+                    <a class="loo" href="https://www.instagram.com/hoppy.epitech/" ><img class="logo-footer" src="{% static 'img/Logo_Insta.png' %}" alt=""></a>
+                    <a class="loo" href="https://www.linkedin.com/school/epitech---european-institute-of-technology/posts/?feedView=all" ><img class="logo-footer" src="{% static 'img/Logo_LinkedIn.png' %}" alt=""></a>
+                    <a class="loo" href="https://x.com/Epitech" ><img class="logo-footer" src="{% static 'img/Logo_X.png' %}" alt=""></a>
+                    <a class="loo" href="" ><img src="{% static 'img/Logo_dispo.png' %}" class="logo-footer" alt=""></a>
+                    <!-- <a  href="" ><img class="logo-footer" src="" alt="">App store</a> -->
+                  </ul>
+                </div>
+                <div class="info-J">
+                  <p class="mention"><center>CGV</center></p>
+                  <p class="mention"><center> - </center></p>
+                  <p class="mention"><center>Mentions légales</center></p>
+                  <p class="mention"><center> - </center></p>
+                  <p class="mention"><center>Traitement de données</center></p>
+                </div>
+              </div>
+              </footer>
+        </footer>
+    </body>
+</html>

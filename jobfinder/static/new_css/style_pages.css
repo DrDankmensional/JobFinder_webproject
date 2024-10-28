@@ -1,0 +1,623 @@
+@font-face {
+    font-family: Quantify;
+    src: url(../JobFinder_Front_Elements/font/Quantify.ttf);
+}
+
+@font-face {
+    font-family: ITC_book;
+    src: url(../font/ITC/ITCAvantGardeStd-BkCn.otf);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    font-family: ITC_book;
+    background-color: #F2F6F7;
+    margin: 0%;
+}
+
+header{
+    flex: 1;
+    display: flex;
+    margin: 2%;
+}
+
+main{
+    flex:6;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+
+    /* justify-content : center;
+    align-items: center; */
+}
+
+
+
+@media screen and (max-width: 426px) {
+
+    nav{
+        flex: 1;
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 100%;
+        
+    }
+    
+    .logo{
+        flex: 3;
+    
+    }
+    
+    .logo_img{
+        /* max-width: 60%; */
+        height: 100%;
+        max-height: 96px;
+        
+    }
+    
+    .log{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: min-content;
+        align-content: flex-end;
+    }
+
+    a{
+        text-align: center;
+    }
+
+    h2{
+        margin: 2%;
+    }
+
+    .info{
+        margin: 2%;
+    }
+
+    .myInfo{
+      border-radius: 20px;
+      background-color: #FFFFFF;
+      box-shadow: 0px 0px 5px black;
+      margin-bottom: 4%;
+      padding: 2%;
+  }
+
+    .jobEncart{
+      background-color: #FFFFFF;
+      border-radius: 15px;
+      margin: 1%;
+      padding: 1%;
+      width: auto;
+  
+      display: flex;
+      height: min-content;
+      flex-direction: column;
+
+      box-shadow: 0px 0px 5px black;
+  }
+    .jobTitle{
+        margin: 1%;
+        flex: 1;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .annonceTitre{
+      flex: 1 90%;
+      margin: 5px;
+      font-size: xx-large;
+  }
+
+  .annonceElement{
+      flex: 1 45%;
+      margin: 5px;
+      font-size: large;
+  }
+    
+    .short_description{
+        margin: 1%;
+        flex: 2;
+    }
+    
+    .long_description{
+        margin: 1%;
+        flex: 2;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        margin: 2%;
+        justify-content: space-between;
+    }
+
+    .encartCand{
+        background-color: #FFFFFF;
+        border: solid black 0.5px;
+        border-radius: 15px;
+        margin: 1%;
+        padding: 1%;
+        width: auto;
+    
+        display: flex;
+        height: min-content;
+        flex-direction: column;
+
+        box-shadow: 0px 0px 5px black;
+    }
+
+    .candElement{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    /* Footer */
+  
+    footer{
+        flex: 3;
+        margin: 0%;
+        display: flex;
+        flex-flow: column;
+        background-color: #F0F0F1;
+        padding: 3%;
+    }    
+
+    .info-G {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 30%;
+        margin: 0;
+      }
+
+      .infos{
+        margin-top: 3%;
+        margin-bottom: 3%;
+      }
+
+      .reseaux-J {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 2 60%;
+      }
+
+      .info-J {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1 50%;
+        align-items: center;
+        /* flex-wrap: wrap; */
+      }
+       
+      .reseaux {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-be;
+        justify-items: center;
+        align-items: center;
+        flex: 1 50%;
+      }
+
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .logo-footer{
+        max-width: 80%;
+      }
+
+      .mention{
+        flex: 1;
+      }
+    
+}
+
+@media screen and (min-width: 426px) {
+
+    nav{
+        flex: 1;
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 100%;
+        
+    }
+    
+    .logo{
+        flex: 3;
+    
+    }
+    
+    .logo_img{
+        /* max-width: 60%; */
+        height: 100%;
+        max-height: 96px;
+        
+    }
+    
+    .log{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: min-content;
+        align-content: flex-end;
+    }
+
+    a{
+        text-align: center;
+    }
+
+    h2{
+        margin: 2%;
+    }
+
+    .info{
+        margin: 2%;
+    }
+
+    .myInfo{
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 5px black;
+        margin-bottom: 4%;
+        padding: 2%;
+    }
+
+    .jobEncart{
+      background-color: #FFFFFF;
+      border-radius: 15px;
+      margin: 1%;
+      padding: 1%;
+      width: auto;
+ 
+      height: min-content;
+
+      box-shadow: 0px 0px 5px black;
+  }
+    .jobTitle{
+        margin: 1%;
+        flex: 1 90%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .annonceTitre{
+      flex: 1 90%;
+      margin: 5px;
+      font-size: xx-large;
+  }
+
+    .annonceElement{
+        flex: 1 45%;
+        margin: 5px;
+        font-size: large;
+    }
+    
+    .short_description{
+        margin: 1%;
+        flex: 2 90%;
+    }
+    
+    .long_description{
+        margin: 1%;
+        flex: 2 90%;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        margin: 2%;
+        justify-content: space-between;
+    }
+
+    .encartCand{
+        background-color: #FFFFFF;
+        border: solid black 0.5px;
+        border-radius: 15px;
+        margin: 1%;
+        padding: 2%;
+        width: auto;
+    
+        display: flex;
+        height: min-content;
+        flex-flow: row wrap;
+
+        box-shadow: 0px 0px 5px black;
+    }
+
+    .candElement{
+        flex: 1 45%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        font-size: medium;
+    }
+
+     /* Footer */
+
+     footer{
+        flex: 3;
+        margin: 0%;
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #F0F0F1;
+        padding: 2%;
+    }    
+
+    h3{
+        flex: 1 100%;
+        font-size: medium;
+    }
+
+    .info-G {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 45%;
+        margin: 0;
+      }
+
+      .infos{
+        margin-top: 3%;
+        margin-bottom: 3%;
+      }
+
+      .reseaux-J {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 2 45%;
+      }
+
+      .info-J {
+        display: flex;
+        flex: 1 50%;
+        align-items: center;
+      }
+       
+      .reseaux {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        flex: 1 45%;
+        height: min-content;
+      }
+
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .logo-footer{
+        max-width: 50%;
+      }
+
+      .mention{
+        flex: 1;
+      }
+    
+}
+
+.connexion{
+    align-items: center;
+    background-color: #457B9D;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    text-align: center;
+    box-shadow: 0px 0px 3px black;
+  }
+  
+  .inscription {
+      align-items: center;
+      background-color: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 3rem;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.85);
+      cursor: pointer;
+      display: inline-flex;
+      font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+      line-height: 1.25;
+      margin: 0;
+      min-height: 3rem;
+      padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+      position: relative;
+      text-decoration: none;
+      transition: all 250ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      width: auto;
+      text-align: center;
+      box-shadow: 0px 0px 3px black;
+    }
+
+.button-1:hover,
+.button-1:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-1:hover {
+  transform: translateY(-1px);
+}
+
+.button-1:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+.modif{
+  margin: 2%;
+  background-color: #457B9D;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) 10px;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  box-shadow: 0px 0px 3px black;
+}
+.learnMore{
+    margin: 2%;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) 10px;
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    box-shadow: 0px 0px 3px black;
+}
+  
+.postuler{
+    margin: 2%;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) 10px;
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    box-shadow: 0px 0px 3px black;
+}
+
+.suppr{
+  margin: 2%;
+  background-color: #9E4646;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) 10px;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  box-shadow: 0px 0px 3px black;
+}
+
+  
+  .button-1:hover,
+  .button-1:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  .button-1:hover {
+    transform: translateY(-1px);
+  }
+  
+  .button-1:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
